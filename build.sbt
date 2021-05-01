@@ -15,7 +15,6 @@ lazy val shaded = (project in file("."))
 
 resolvers ++= Seq(
   Classpaths.typesafeReleases,
-  "Artifactory" at "https://artifactory.paloaltonetworks.local/artifactory/AIA-BI-SBT-REMOTE/",
   "Local Maven Repository" at "file:///"+Path.userHome+"/.m2/repository"
 )
 resolvers += Resolver.mavenLocal
