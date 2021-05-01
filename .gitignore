@@ -1,2 +1,14 @@
 *.class
 *.log
+target/*
+*.idea
+*.iml
+spark-warehouse/*
+lib/*
+.settings
+.cache-main
+.classpath
+.project
+.cache-tests
+.pydevproject
+dependency-reduced-pom.xml
