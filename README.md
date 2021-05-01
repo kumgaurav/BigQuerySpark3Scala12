@@ -17,3 +17,9 @@ spark-submit \
 --class com.kumargaurav.ReadBigqueryTableDemo  \
 --jars /Users/gkumargaur/workspace/scala/SparkScala31Poc/spark-bigquery-latest_2.12.jar \ 
 target/scala-2.12/BigQuerySpark3Scala12-assembly-0.1.jar 
+
+
+
+
+
+bigquery+scala+spark3+github
