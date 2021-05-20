@@ -27,11 +27,11 @@ lazy val commonTestDependencies = Seq(
 )
 
 libraryDependencies ++= (commonTestDependencies ++ Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion,
-  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
+  "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
   // type-safe
   "com.typesafe" % "config" % "1.3.1",
-  "com.google.cloud.spark" %% "spark-bigquery-with-dependencies" % "0.20.0",
+  "com.google.cloud.spark" %% "spark-bigquery-with-dependencies" % "0.20.0" % "provided",
   "com.google.cloud" % "google-cloud-bigquery" % "1.123.2",
   "com.google.cloud" % "google-cloud-bigquerystorage" % "1.6.0" exclude("io.grpc", "grpc-netty-shaded"),
   
