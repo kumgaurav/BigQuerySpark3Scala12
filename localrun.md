@@ -23,6 +23,7 @@ gcloud dataproc jobs submit spark \
 	--class com.kumargaurav.WriteBQTableWithPartitionDemo \
 	--region us-central1 \
 	--project itd-aia-de \
+	--properties="spark.executor.cores=4" \
 	--jars "gs://itd-aia-de/gcs-cs-works/jars/BigQuerySpark3Scala12-assembly-0.1.jar,gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar"
 	
 	
